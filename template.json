@@ -1,0 +1,6 @@
+{
+  "task": {
+    "program": ["index.js"],
+    "submit": "index.js"
+  }
+}

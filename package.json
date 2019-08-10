@@ -5,7 +5,14 @@
   "author": "elzup <guild0105@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^12.7.1",
+    "@types/node": "^9.3.0",
     "atcoder-cli": "^2.0.3"
+  },
+  "dependencies": {
+    "typescript": "^2.1.6"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc"
   }
 }
