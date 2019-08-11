@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strictNullChecks": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "target": "es6",
     "module": "CommonJS",
     "declaration": false,

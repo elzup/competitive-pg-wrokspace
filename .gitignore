@@ -62,7 +62,9 @@ typings/
 # next.js build output
 .next
 
-*.js
+tests/
+testj
 
 *.in
 *.out
+

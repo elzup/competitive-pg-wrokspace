@@ -13,6 +13,8 @@
   },
   "scripts": {
     "watch": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "submit": "acc submit",
+    "test": "oj test -c 'ts-node main.ts' -d tests"
   }
 }
