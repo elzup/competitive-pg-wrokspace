@@ -6,7 +6,8 @@
     "module": "CommonJS",
     "declaration": false,
     "noEmitOnError": true,
-    "rootDir": "."
+    "rootDir": ".",
+    "strictPropertyInitialization": false
   },
   "include": [
     "**/*.ts"
