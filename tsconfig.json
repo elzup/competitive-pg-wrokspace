@@ -3,15 +3,15 @@
     "strictNullChecks": true,
     "noImplicitAny": false,
     "target": "es6",
-    "module": "CommonJS",
+    "module": "commonjs",
     "declaration": false,
     "noEmitOnError": true,
     "rootDir": ".",
     "strictPropertyInitialization": false
   },
-  "include": [
-    "**/*.ts"
-  ],
+  // "include": [
+  //   "**/*.ts"
+  // ],
   "exclude": [
     "node_modules"
   ]

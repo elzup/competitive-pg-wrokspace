@@ -6,12 +6,12 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^9.3.0",
-    "atcoder-cli": "^2.0.3"
+    "atcoder-cli": "^2.0.3",
+    "typescript": "^3.5.3"
   },
-  "dependencies": {
-    "typescript": "^2.1.6"
-  },
+  "dependencies": {},
   "scripts": {
+    "new": "acc new --template ts",
     "watch": "tsc --watch",
     "build": "tsc",
     "submit": "acc submit",
