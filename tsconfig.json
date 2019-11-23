@@ -2,7 +2,7 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "noImplicitAny": false,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noImplicitReturns": true,
     "esModuleInterop": true,
     "strict": true,
@@ -14,9 +14,9 @@
     "rootDir": ".",
     "strictPropertyInitialization": false
   },
-  // "include": [
-  //   "**/*.ts"
-  // ],
+  "include": [
+    "**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -13,7 +13,7 @@
   "dependencies": {},
   "scripts": {
     "new": "acc new --template ts",
-    "add": "acc add --template ts",
+    "next": "acc add --template ts",
     "watch": "tsc --watch",
     "build": "tsc",
     "submit": "acc submit main.ts",
