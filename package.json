@@ -13,9 +13,10 @@
   "dependencies": {},
   "scripts": {
     "new": "acc new --template ts",
+    "add": "acc add --template ts",
     "watch": "tsc --watch",
     "build": "tsc",
-    "submit": "acc submit $INIT_CWD/main.ts",
+    "submit": "acc submit main.ts",
     "pwd": "pwd",
     "test": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests"
   }
