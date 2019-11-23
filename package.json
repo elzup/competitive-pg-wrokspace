@@ -7,6 +7,7 @@
   "devDependencies": {
     "@types/node": "^9.3.0",
     "atcoder-cli": "^2.0.3",
+    "ts-node": "^8.5.2",
     "typescript": "^3.5.3"
   },
   "dependencies": {},
@@ -14,7 +15,8 @@
     "new": "acc new --template ts",
     "watch": "tsc --watch",
     "build": "tsc",
-    "submit": "acc submit",
-    "test": "oj test -c 'ts-node main.ts' -d tests"
+    "submit": "acc submit $INIT_CWD/main.ts",
+    "pwd": "pwd",
+    "test": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests"
   }
 }
