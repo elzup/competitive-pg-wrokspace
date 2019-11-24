@@ -12,12 +12,10 @@
       sum += d * c
       dsum += c
     }
-    const res = dsum - 1 + Math.floor(sum / 10)
+    const res = dsum - 1 + Math.floor((sum - 1) / 9)
 
     console.log(res)
   }
-
-  // const values = obj => Object.keys(obj).map(e => obj[e]);
 
   const reader = (str: string) => {
     const lines = str.trim().split('\n')
@@ -30,5 +28,9 @@
     return { lines, line, s, n, ss, ns }
   }
 
-  main(require('fs').readFileSync('/dev/stdin', 'utf8'))
+  const getInput = () => {
+    return require('fs').readFileSync('/dev/stdin', 'utf8')
+  }
+
+  main(getInput())
 }
