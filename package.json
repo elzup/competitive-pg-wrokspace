@@ -12,8 +12,8 @@
   },
   "dependencies": {},
   "scripts": {
-    "new": "acc new --template ts",
-    "next": "acc add --template ts",
+    "new": "acc new --template js",
+    "next": "acc add --template js",
     "watch": "tsc --watch",
     "build": "tsc",
     "submit": "acc submit main.ts",
