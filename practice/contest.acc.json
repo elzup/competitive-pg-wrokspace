@@ -1,0 +1,26 @@
+{
+  "contest": {
+    "id": "practice",
+    "title": "practice contest",
+    "url": "https://atcoder.jp/contests/practice"
+  },
+  "tasks": [
+    {
+      "id": "practice_1",
+      "label": "A",
+      "title": "Welcome to AtCoder",
+      "url": "https://atcoder.jp/contests/practice/tasks/practice_1",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "main.js"
+      }
+    },
+    {
+      "id": "practice_2",
+      "label": "B",
+      "title": "Interactive Sorting",
+      "url": "https://atcoder.jp/contests/practice/tasks/practice_2"
+    }
+  ]
+}

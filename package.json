@@ -10,14 +10,15 @@
     "ts-node": "^8.5.2",
     "typescript": "^3.5.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^6.7.2"
+  },
   "scripts": {
     "new": "acc new --template js",
     "next": "acc add --template js",
-    "watch": "tsc --watch",
-    "build": "tsc",
-    "submit": "acc submit main.ts",
+    "submit": "acc submit main.js",
     "pwd": "pwd",
-    "test": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests"
+    "test": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests",
+    "test:ts": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests"
   }
 }

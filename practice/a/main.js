@@ -2,9 +2,10 @@
 
 const main = (input /*: string */) => {
   const r = reader(input)
-  const n = r.n()
-  const a = r.ns()
-  const res = 1.0 / a.reduce((v, c) => c + 1 / v, 0)
+  const a = r.n()
+  const [c, b] = r.ns()
+  const s = r.s()
+  console.log(`${a + b + c} ${s}`)
 }
 
 // const values = obj => Object.keys(obj).map(e => obj[e]);
