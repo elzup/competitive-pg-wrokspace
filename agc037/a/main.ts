@@ -4,8 +4,10 @@ function main(input: string) {
   const sl = s.length
   let p = ''
   let a = 0
+
   for (let i = 0; i < sl; i++) {
     const c = s[i]
+
     if (c === p) {
       if (i + 1 < sl) {
         p = c + s[i + 1]
@@ -30,6 +32,7 @@ const reader1 = (s: string) => {
   const ls = () => lns.shift() || ''
   const as = () => ls().split(' ')
   const an = () => as().map(Number)
+
   return { lns, ls, as, an }
 }
 

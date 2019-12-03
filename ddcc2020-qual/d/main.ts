@@ -7,8 +7,10 @@
 
     let sum = 0
     let dsum = 0
+
     for (let i = 0; i < M; i++) {
       const [d, c] = lines[i].split(' ').map(Number)
+
       sum += d * c
       dsum += c
     }
@@ -25,6 +27,7 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 

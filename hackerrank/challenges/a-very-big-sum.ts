@@ -1,13 +1,15 @@
 {
   const main = input => {
     const r = reader(input)
-    const n = r.n()
+    const _n = r.n()
     const ar = r.ss().map(s => s.split('').map(Number))
     let d = 0
     let res: number[] = []
+
     while (ar.some(v => v.length >= 1)) {
       ar.forEach(bn => {
         const n = bn.pop()
+
         if (!n) {
           return
         }
@@ -37,6 +39,7 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 

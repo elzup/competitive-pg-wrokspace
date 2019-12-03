@@ -1,7 +1,7 @@
 function main(input: string) {
   const lines = input.trim().split('\n')
 
-  const [n] = lines[0].split(' ').map(Number)
+  const [_n] = lines[0].split(' ').map(Number)
   const h = lines[1].split(' ').map(Number)
   let v = 0
   const ok = h.every(hi => {
@@ -11,6 +11,7 @@ function main(input: string) {
     }
     return v <= hi + 1
   })
+
   console.log(ok ? 'Yes' : 'No')
 }
 

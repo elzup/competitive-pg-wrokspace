@@ -1,11 +1,25 @@
 {
-  "extends": "eslint:recommended",
+  "extends": ["nzap", "nzap/typescript"],
   "env": {
     "node": true,
     "es6": true
   },
 
   "rules": {
-    "no-unused-vars": 1
-  }
+    "no-loop-func": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-require-imports": 0,
+    "@typescript-eslint/no-unused-vars": [
+      1,
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/restrict-plus-operands": 0
+      }
+    }
+  ]
 }

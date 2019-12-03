@@ -1,14 +1,16 @@
 {
   const main = (input: string) => {
     const r = reader(input)
-    const N = r.n()
+    const _N = r.n()
     const A = r.ns()
     let a = 0
     let b = 0
     let c = 0
     let res = 1
+
     A.forEach(v => {
       const l = Number(a === v) + Number(b === v) + Number(c === v)
+
       if (a === v) {
         a++
       } else if (b === v) {
@@ -31,9 +33,11 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 
   const getInput = () => require('fs').readFileSync('/dev/stdin', 'utf8')
+
   main(getInput())
 }

@@ -8,6 +8,7 @@
     let k2 = T1 * B1
     let s = T2 * A2
     let s2 = T2 * B2
+
     if (k > k2) {
       k = k2 - k // -
       s = s2 - s // +
@@ -40,9 +41,11 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 
   const getInput = () => require('fs').readFileSync('/dev/stdin', 'utf8')
+
   main(getInput())
 }

@@ -1,13 +1,15 @@
 {
   const main = (input: string) => {
     const r = reader(input)
-    const [H, W, K] = r.ns()
+    const [H, W, _K] = r.ns()
     const s: (number | string)[][] = r.lines.map(line => line.split(''))
-    const a = [...s]
+    const _a = [...s]
 
     let fillMaster = 0
+
     for (let y = 0; y < H; y++) {
       let fill = 0
+
       for (let x = 0; x < W; x++) {
         if (s[y][x] === '#') {
           fill += 1
@@ -51,6 +53,7 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 

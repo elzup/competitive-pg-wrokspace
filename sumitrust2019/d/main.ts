@@ -1,7 +1,7 @@
 {
   const main = (input: string) => {
     const r = reader(input)
-    const N = r.n()
+    const _N = r.n()
     const S = r.s()
     const d1: { [d: string]: boolean } = {}
     const d2: { [d: string]: boolean } = {}
@@ -42,9 +42,11 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 
   const getInput = () => require('fs').readFileSync('/dev/stdin', 'utf8')
+
   main(getInput())
 }

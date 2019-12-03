@@ -14,6 +14,7 @@
         }
         return false
       })
+
     if (!res) {
       console.log(':(')
     }
@@ -28,9 +29,11 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, s, n, ss, ns }
   }
 
   const getInput = () => require('fs').readFileSync('/dev/stdin', 'utf8')
+
   main(getInput())
 }

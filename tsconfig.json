@@ -4,15 +4,10 @@
     "noImplicitAny": false,
     "noUnusedLocals": false,
     "noImplicitReturns": true,
-    "esModuleInterop": true,
     "strict": true,
     "target": "es5",
-    "module": "commonjs",
-    "sourceMap": true,
-    "declaration": false,
-    "noEmitOnError": true,
-    "rootDir": ".",
-    "strictPropertyInitialization": false
+    "lib": ["es6"],
+    "module": "esnext",
   },
   "include": [
     "**/*.ts"

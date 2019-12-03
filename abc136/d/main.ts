@@ -7,6 +7,7 @@ function main(input: string) {
   let k = 0
 
   const a = cs.map(() => 0)
+
   cs.forEach((c, i) => {
     if (c === R) {
       k++
@@ -21,6 +22,7 @@ function main(input: string) {
 
   cs.reverse().forEach((c, i) => {
     const j = a.length - i - 1
+
     if (c === L) {
       k++
       return

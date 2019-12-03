@@ -3,6 +3,7 @@ function main(input: string) {
 
   const [n] = lines[0].split(' ').map(Number)
   let res = 0
+
   for (let i = 1; i <= n; i++) {
     if (i >= 100000) {
     } else if (i >= 10000) {

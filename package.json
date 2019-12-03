@@ -7,16 +7,17 @@
   "devDependencies": {
     "@types/node": "^9.3.0",
     "atcoder-cli": "^2.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-nzap": "^1.3.0",
     "ts-node": "^8.5.2",
     "typescript": "^3.5.3"
   },
-  "dependencies": {
-    "eslint": "^6.7.2"
-  },
+  "dependencies": {},
   "scripts": {
     "new": "acc new --template js",
     "next": "acc add --template js",
     "submit": "acc submit main.js",
+    "lint": "eslint --ext .js,.ts .",
     "pwd": "pwd",
     "test": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests",
     "test:ts": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests"

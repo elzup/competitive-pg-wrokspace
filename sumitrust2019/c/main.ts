@@ -3,6 +3,7 @@
     const r = reader(input)
     const X = r.n()
     const a: { [n: number]: boolean } = { 0: true }
+
     for (let i = 0; i < X; i++) {
       if (!a[i]) {
         continue
@@ -27,9 +28,11 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 
   const getInput = () => require('fs').readFileSync('/dev/stdin', 'utf8')
+
   main(getInput())
 }

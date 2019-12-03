@@ -8,6 +8,7 @@
     let left = 0
     let right = len
     let min = right - left
+
     a.forEach(v => {
       left += v
       right -= v
@@ -26,6 +27,7 @@
 
     const ss = () => s().split(' ')
     const ns = () => ss().map(Number)
+
     return { lines, line, s, n, ss, ns }
   }
 
