@@ -9,9 +9,7 @@
     "lib": ["es6"],
     "module": "esnext",
   },
-  "include": [
-    "**/*.ts"
-  ],
+  "include": [ "**/*.ts" ],
   "exclude": [
     "node_modules"
   ]
