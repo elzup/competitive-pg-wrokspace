@@ -28,7 +28,18 @@ const _shift = (c /*: string */, n /*: number */) => {
 
 // loop
 const _values = obj => Object.keys(obj).map(e => obj[e])
-const _map = (obj, callback) => Object.keys(obj).map(k => callback(k, obj[k]))
+const _map = (obj, callback) => Object.keys(obj).map(k => callback(obj[k], k))
+// colleciton
+const _groupBy = (arr, callback) =>
+  arr
+    .map(v => [v, callback(v)])
+    .reduce((obj, [v, k]) => {
+      if (!obj[k]) {
+        obj[k] = []
+      }
+      obj[k].push(v)
+      return obj
+    }, {})
 
 // number of digit 10進数での 桁数
 const _nod = (n /*: number*/) => String(n).length
