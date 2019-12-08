@@ -12,11 +12,16 @@ const main = (input /*: string */) => {
   console.log(res)
 }
 
-// type BinarySearch = <T>(min: number, max: number, iFunc: (i: number) => T, compare: (v: T) => 0 | 1 | -1) => number
+// type BinarySearch = <T>(lo: number, hi: number, iFunc: (i: number) => T, compare: (v: T) => 0 | 1 | -1) => number
 /*::
-type BinarySearch<T = any> = (min: number, max: number, iFunc: (i: number) => T, compare: (v: T) => 0 | 1 | -1) => number
+type BinarySearch<T = any> = (lo: number, hi: number, iFunc: (i: number) => T, compare: (v: T) => 0 | 1 | -1) => number
 */
-const binarySearch /*: BinarySearch<any> */ = (lo, hi, iFunc, compare) => {
+const binarySearch /*: BinarySearch<any> */ = (
+  lo: number,
+  hi: number,
+  iFunc,
+  compare
+) => {
   if (lo >= hi) {
     return Math.max(0, lo)
   }
