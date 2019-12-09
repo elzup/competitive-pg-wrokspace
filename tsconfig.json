@@ -4,6 +4,7 @@
     "noImplicitAny": false,
     "noUnusedLocals": false,
     "noImplicitReturns": true,
+    "downlevelIteration": false,
     "strict": true,
     "target": "es5",
     "lib": ["es6"],
