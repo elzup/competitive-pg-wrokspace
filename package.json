@@ -5,14 +5,16 @@
   "author": "elzup <guild0105@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^9.3.0",
-    "atcoder-cli": "^2.0.3",
+    "@types/node": "^12.12.17",
+    "atcoder-cli": "^2.0.4",
     "eslint": "^6.7.2",
     "eslint-config-nzap": "^1.3.0",
-    "ts-node": "^8.5.2",
-    "typescript": "^3.5.3"
+    "ts-node": "^8.5.4",
+    "typescript": "3.7.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tstl": "^2.3.1"
+  },
   "scripts": {
     "new": "acc new --template ts",
     "cwd": "cd $INIT_CWD",
@@ -21,7 +23,7 @@
     "submit:ts": "(cd $INIT_CWD && cp main.js && acc submit main.ts && rm main.ts)",
     "lint": "eslint --ext .js,.ts .",
     "pwd": "pwd",
-    "test": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests",
-    "test:ts": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests"
+    "test": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests",
+    "test:js": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests"
   }
 }
