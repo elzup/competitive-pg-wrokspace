@@ -18,6 +18,9 @@ const _rot = (s: string, n: number) =>
     .map(c => _shift(c, n))
     .join('')
 
+const _arr2D = (h: number, w: number, fill = 0) =>
+  new Array(h).fill(0).reduce(p => p.concat([Array(w).fill(fill)]), [])
+
 // charcode shift
 const ac = 'A'.charCodeAt(0)
 const _shift = (c: string, n: number) =>
