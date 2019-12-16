@@ -23,7 +23,7 @@
     "submit:ts": "(cd $INIT_CWD && cp main.js && acc submit main.ts && rm main.ts)",
     "lint": "eslint --ext .js,.ts .",
     "pwd": "pwd",
-    "test": "oj test -c \"ts-node $INIT_CWD/main.ts\" -d $INIT_CWD/tests",
+    "test": "./testcommand.sh",
     "test:js": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests"
   }
 }
