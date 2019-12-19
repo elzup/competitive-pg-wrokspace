@@ -27,7 +27,7 @@ function _primeFactorization(n: number) {
   return { list, groups }
 }
 
-// 公約数 一覧 prime
+// 約数 一覧 prime
 const _divisors = (n: number) => {
   const sq = Math.floor(Math.sqrt(n))
   const list: number[] = []
@@ -45,6 +45,12 @@ const _divisors = (n: number) => {
   }
   return { list, pairs }
 }
+
+// 最大公約数
+const _gcd = (a, b) => (b ? _gcd(b, a % b) : a)
+
+// 最小公倍数
+const _lcm = (a, b) => (a * b) / _gcd(a, b)
 
 const _productRange = (a: number, b: number) => {
   let prd = a
