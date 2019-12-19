@@ -21,6 +21,9 @@ const _rot = (s: string, n: number) =>
 const _arr2D = (h: number, w: number, fill = 0) =>
   new Array(h).fill(0).reduce(p => p.concat([Array(w).fill(fill)]), [])
 
+const _range = (n: number) => Array.from(Array(n).keys())
+const _distance = (x1, y1, x2, y2) => Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
 // charcode shift
 const ac = 'A'.charCodeAt(0)
 const _shift = (c: string, n: number) =>
