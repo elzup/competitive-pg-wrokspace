@@ -11,7 +11,7 @@ const _unionFind = n => {
   const merge = (x: number, y: number): boolean => {
     x = root(x)
     y = root(y)
-    if (x == y) return false
+    if (x === y) return false
     if (siz[x] < siz[y]) [x, y] = [y, x]
     // merge technique（データ構造をマージするテク．小を大にくっつける）
     siz[x] += siz[y]

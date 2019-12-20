@@ -37,7 +37,7 @@ const binarySearch /*: BinarySearch<any> */ = (
   }
   return mid
 }
-const comp = (a /*: number */, b /*: number */) => (a == b ? 0 : a > b ? 1 : -1)
+const comp = (a /*: number */, b /*: number */) => (a === b ? 0 : a > b ? 1 : -1)
 
 const nod = (n /*: number*/) => String(n).length
 

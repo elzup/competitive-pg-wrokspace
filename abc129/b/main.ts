@@ -1,7 +1,7 @@
 {
   const main = (input: string) => {
     const r = reader(input)
-    const N = r.n()
+    const _N = r.n()
     const W = r.ns()
 
     const sum = W.reduce((a, b) => a + b, 0)

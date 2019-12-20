@@ -64,7 +64,7 @@ const _productRange = (a: number, b: number) => {
 
 // combination 組み合わせ
 const _combinations = (n: number, r: number) => {
-  if (n == r) return 1
+  if (n === r) return 1
 
   r = r < n - r ? n - r : r
   return _productRange(r + 1, n) / _productRange(1, n - r)

@@ -3,7 +3,7 @@
     const r = reader(input)
     const [X, Y] = r.ns()
 
-    // X + Y == 3 * n - 1
+    // X + Y === 3 * n - 1
     if ((X + Y) % 3 !== 0) {
       console.log(0)
       return

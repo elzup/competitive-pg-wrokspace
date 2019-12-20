@@ -65,4 +65,4 @@ const _binarySearch /*: BinarySearch<any> */ = (lo, hi, iFunc, compare) => {
   return mid
 }
 const _comp = (a /*: number */, b /*: number */) =>
-  a == b ? 0 : a > b ? 1 : -1
+  a === b ? 0 : a > b ? 1 : -1

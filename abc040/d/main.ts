@@ -45,7 +45,7 @@
 
     vw.sort((a, b) => a[0] - b[0])
 
-    vw.forEach(([i, a, b, siz]) => {
+    vw.forEach(([_i, _a, _b, siz]) => {
       console.log(siz)
     })
     return
@@ -57,7 +57,7 @@
 
     // 根の検索
     const root = (x: number): number => {
-      while (par[x] != x) {
+      while (par[x] !== x) {
         x = par[x] = par[par[x]]
       }
       return x
@@ -65,14 +65,14 @@
     const merge = (x: number, y: number): boolean => {
       x = root(x)
       y = root(y)
-      if (x == y) return false
+      if (x === y) return false
       if (siz[x] < siz[y]) [x, y] = [y, x]
       // merge technique（データ構造をマージするテク．小を大にくっつける）
       siz[x] += siz[y]
       par[y] = x
       return true
     }
-    const issame = (x: number, y: number) => root(x) == root(y)
+    const issame = (x: number, y: number) => root(x) === root(y)
     const size = (x: number) => siz[root(x)]
 
     return { root, merge, issame, size }
@@ -93,5 +93,5 @@
   const _getInput = () => require('fs').readFileSync('/dev/stdin', 'utf8')
   const _res = main(_getInput())
 
-  if (typeof _res === 'number' || typeof _res == 'string') console.log(_res)
+  if (typeof _res === 'number' || typeof _res === 'string') console.log(_res)
 }

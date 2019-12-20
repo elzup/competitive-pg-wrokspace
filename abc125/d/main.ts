@@ -35,5 +35,5 @@
   const getInput = () => require('fs').readFileSync('/dev/stdin', 'utf8')
   const res = main(getInput())
 
-  if (typeof res === 'number' || typeof res == 'string') console.log(res)
+  if (typeof res === 'number' || typeof res === 'string') console.log(res)
 }

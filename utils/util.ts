@@ -52,7 +52,7 @@ const _groupBy = (arr, callback) =>
 // number of digit 10進数での 桁数
 const _nod = (n /*: number*/) => String(n).length
 
-const _comp = <T = string | number>(a: T, b: T) => (a == b ? 0 : a > b ? 1 : -1)
+const _comp = <T = string | number>(a: T, b: T) => (a === b ? 0 : a > b ? 1 : -1)
 
 const _decToBin = (dec: number, pad: number) =>
   ('0'.repeat(pad) + dec.toString(2))
