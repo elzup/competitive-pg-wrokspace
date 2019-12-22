@@ -1,3 +1,4 @@
+// Union Find 最小全域木
 const _unionFind = n => {
   const par: number[] = Array.from(Array(n).keys())
   const siz: number[] = Array(n).fill(1)

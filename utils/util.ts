@@ -22,6 +22,9 @@ const _arr2D = (h: number, w: number, fill = 0) =>
   new Array(h).fill(0).reduce(p => p.concat([Array(w).fill(fill)]), [])
 
 const _range = (n: number) => Array.from(Array(n).keys())
+const _product = (n: number, mod) =>
+  _range(n + 1).reduce((p, c) => (p * c) % mod, 1)
+
 const _distance = (x1, y1, x2, y2) => Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
 // charcode shift
@@ -52,7 +55,8 @@ const _groupBy = (arr, callback) =>
 // number of digit 10進数での 桁数
 const _nod = (n /*: number*/) => String(n).length
 
-const _comp = <T = string | number>(a: T, b: T) => (a === b ? 0 : a > b ? 1 : -1)
+const _comp = <T = string | number>(a: T, b: T) =>
+  a === b ? 0 : a > b ? 1 : -1
 
 const _decToBin = (dec: number, pad: number) =>
   ('0'.repeat(pad) + dec.toString(2))

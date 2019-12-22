@@ -1,0 +1,33 @@
+{
+  "contest": {
+    "id": "arc076",
+    "title": "AtCoder Regular Contest 076",
+    "url": "https://atcoder.jp/contests/arc076"
+  },
+  "tasks": [
+    {
+      "id": "arc076_a",
+      "label": "C",
+      "title": "Reconciled?",
+      "url": "https://atcoder.jp/contests/arc076/tasks/arc076_a"
+    },
+    {
+      "id": "arc076_b",
+      "label": "D",
+      "title": "Built?",
+      "url": "https://atcoder.jp/contests/arc076/tasks/arc076_b"
+    },
+    {
+      "id": "arc076_c",
+      "label": "E",
+      "title": "Connected?",
+      "url": "https://atcoder.jp/contests/arc076/tasks/arc076_c"
+    },
+    {
+      "id": "arc076_d",
+      "label": "F",
+      "title": "Exhausted?",
+      "url": "https://atcoder.jp/contests/arc076/tasks/arc076_d"
+    }
+  ]
+}
