@@ -24,3 +24,24 @@ const _unionFind = n => {
 
   return { root, merge, issame, size }
 }
+
+type Edge<T> = [T, T, number]
+const _kruskal = <T>(nodes: T[], edges: Edge<T>[]) => {
+  const mst: Edge<T>[] = []
+  const sortedEdges = edges.sort((a, b) => a[2] - b[2])
+  const keys: string[] = nodes.map(String)
+  const lib = keys.reduce((p, c, i) => Object.assign({}, lib, { [c]: i }), {})
+  const uf = _unionFind(nodes.length)
+
+  nodes.forEach((v, i) => (lib[String(v)] = i))
+
+  sortedEdges.forEach(edge => {
+    const u = lib[String(edge[0])]
+    const v = lib[String(edge[1])]
+
+    if (uf.issame(u, v)) return
+    mst.push(edge)
+    uf.merge(u, v)
+  })
+  return mst
+}
