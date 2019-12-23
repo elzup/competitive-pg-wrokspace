@@ -1,5 +1,5 @@
 // 素因数分解 prime
-function _primeFactorization(n: number) {
+const _primeFactorization = (n: number) => {
   const sq = Math.floor(Math.sqrt(n))
   const groups: { num: number; r: number }[] = []
   const list: number[] = []
