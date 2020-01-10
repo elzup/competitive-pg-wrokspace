@@ -13,7 +13,7 @@
     "lib": ["es6"],
     "module": "commonjs",
   },
-  "include": [ "**/*.ts" ],
+  "include": [ "**/*.ts", "hackerrank/contests/new-year-contest-2020/F.js", "hackerrank/contests/new-year-contest-2020/A.js" ],
   "exclude": [
     "node_modules"
   ]
