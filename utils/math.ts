@@ -123,3 +123,15 @@ const _fset = (n: number) => {
   }
 }
 const _ncr = (n, r) => _mul(fac[n], finv[r], finv[n - r])
+
+const _generatePermutation = (perm, pre, post, n) => {
+  let elem, i, rest, len
+
+  if (n > 0)
+    for (i = 0, len = post.length; i < len; ++i) {
+      rest = post.slice(0)
+      elem = rest.splice(i, 1)
+      _generatePermutation(perm, pre.concat(elem), rest, n - 1)
+    }
+  else perm.push(pre)
+}
