@@ -14,7 +14,8 @@
       1,
       { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
     ],
-    "@typescript-eslint/prefer-for-of": 0
+    "@typescript-eslint/prefer-for-of": 0,
+    "no-eval": 0
   },
   "overrides": [
     {
