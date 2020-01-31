@@ -25,6 +25,9 @@ const _range = (n: number) => Array.from(Array(n).keys())
 const _product = (n: number, mod) =>
   _range(n + 1).reduce((p, c) => (p * c) % mod, 1)
 
+const _chr = s => s.charCodeAt(0)
+const _ord = n => String.fromCharCode(n)
+
 const _distance = (x1, y1, x2, y2) => Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
 // charcode shift
