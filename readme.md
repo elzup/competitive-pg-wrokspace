@@ -7,7 +7,21 @@
   - AtCoder: 910
 
 - Java, Python(2016-7\~2019-12)
+
   - AtCoder: 1383
+
+### template config
+
+check template directory
+
+```
+acc config-dir
+```
+
+```
+# update template for me
+cp template.ts `acc config-dir`/ts/main.ts
+```
 
 ## Used
 
