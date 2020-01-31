@@ -13,7 +13,7 @@
 
     const l = s[0] + p[d[0]] + s[1] + p[d[1]] + s[2] + p[d[2]] + s[3]
 
-    o.reduce((p, c) => p + s[c + 1], d, s[0])
+    o.reduce((prev, c) => prev + p[s[c + 1]] + d, s[0])
 
     if (eval(l) === 7) {
       console.log(l + '=7')

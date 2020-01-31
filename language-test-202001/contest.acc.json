@@ -1,0 +1,136 @@
+{
+  "contest": {
+    "id": "language-test-202001",
+    "title": "Language Test 202001",
+    "url": "https://atcoder.jp/contests/language-test-202001"
+  },
+  "tasks": [
+    {
+      "id": "practice_1",
+      "label": "PracticeA",
+      "title": "Welcome to AtCoder",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/practice_1",
+      "directory": {
+        "path": "practicea",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "abc086_a",
+      "label": "ABC086A",
+      "title": "Product",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/abc086_a",
+      "directory": {
+        "path": "abc086a",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "abc081_a",
+      "label": "ABC081A",
+      "title": "Placing Marbles",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/abc081_a",
+      "directory": {
+        "path": "abc081a",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "abc081_b",
+      "label": "ABC081B",
+      "title": "Shift only",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/abc081_b",
+      "directory": {
+        "path": "abc081b",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "abc087_b",
+      "label": "ABC087B",
+      "title": "Coins",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/abc087_b",
+      "directory": {
+        "path": "abc087b",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "abc083_b",
+      "label": "ABC083B",
+      "title": "Some Sums",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/abc083_b",
+      "directory": {
+        "path": "abc083b",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "abc088_b",
+      "label": "ABC088B",
+      "title": "Card Game for Two",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/abc088_b",
+      "directory": {
+        "path": "abc088b",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "abc085_b",
+      "label": "ABC085B",
+      "title": "Kagami Mochi",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/abc085_b",
+      "directory": {
+        "path": "abc085b",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "arc065_a",
+      "label": "ABC049C",
+      "title": "白昼夢 / Daydream",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/arc065_a",
+      "directory": {
+        "path": "abc049c",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "arc089_a",
+      "label": "ABC086C",
+      "title": "Traveling",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/arc089_a",
+      "directory": {
+        "path": "abc086c",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "practice_2",
+      "label": "L",
+      "title": "Interactive Sorting",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/practice_2",
+      "directory": {
+        "path": "l",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "future_contest_2019_final_a",
+      "label": "M",
+      "title": "モンスターテイマー",
+      "url": "https://atcoder.jp/contests/language-test-202001/tasks/future_contest_2019_final_a"
+    }
+  ]
+}

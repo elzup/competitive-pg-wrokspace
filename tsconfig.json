@@ -10,8 +10,7 @@
     "moduleResolution": "node",
     "strict": true,
     "target": "esnext",
-    "lib": ["es2017"],
-    "module": "commonjs"
+    "lib": ["esnext"]
   },
   "include": [
     "**/*.ts",
