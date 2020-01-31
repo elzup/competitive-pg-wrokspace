@@ -9,12 +9,14 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "strict": true,
-    "target": "es5",
-    "lib": ["es6"],
-    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["es2017"],
+    "module": "commonjs"
   },
-  "include": [ "**/*.ts", "hackerrank/contests/new-year-contest-2020/F.js", "hackerrank/contests/new-year-contest-2020/A.js" ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": [
+    "**/*.ts",
+    "hackerrank/contests/new-year-contest-2020/F.js",
+    "hackerrank/contests/new-year-contest-2020/A.js"
+  ],
+  "exclude": ["node_modules"]
 }

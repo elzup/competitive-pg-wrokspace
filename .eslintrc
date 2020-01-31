@@ -17,6 +17,9 @@
     "@typescript-eslint/prefer-for-of": 0,
     "no-eval": 0
   },
+  "globals": {
+    "BigInt": true
+  },
   "overrides": [
     {
       "files": ["*.js"],
