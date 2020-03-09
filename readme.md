@@ -1,5 +1,7 @@
 # elzup's Competitive Programming Workspace
+
 ![](https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat)
+![](./atcoder-badge.png)
 
 ## Language
 
