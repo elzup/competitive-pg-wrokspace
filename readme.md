@@ -1,6 +1,9 @@
 # elzup's Competitive Programming Workspace
+![](https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat)
 
 ## Language
+
+https://atcoder.jp/users/anozon
 
 - JavaScript, TypeScript(2019-8\~)
 
