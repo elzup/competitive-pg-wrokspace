@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # this script dependence "pup", "jq"
-USERNAME=anozon
+USERNAME=$1
 
 SELECTOR='tr:nth-child(2) span:nth-child(1) json{}'
 USERDATA=$(curl -s https://atcoder.jp/users/$USERNAME |pup $SELECTOR)
@@ -20,11 +20,11 @@ COLORCODE=$(echo '{
   "unrated": "#000000"
 }' |jq --raw-output .$COLOR |sed 's/^.//')
 
-BADGE_URL="https://img.shields.io/badge/AtCoder-$RATE-$COLORCODE.png"
+BADGE_URL="https://img.shields.io/badge/AtCoder-$RATE-$COLORCODE.svg"
 
 echo user: $USERNAME
-echo color: $COLORCODE
+echo color: $COLOR
 echo rate: $RATE
 echo badge-url: $BADGE_URL
-wget $BADGE_URL -q -O atcoder-badge.png
-echo successfly exported badge to ./atcoder-badge.png
+wget $BADGE_URL -q -O atcoder-badge.svg
+echo successfly exported badge to ./atcoder-badge.svg

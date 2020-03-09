@@ -25,6 +25,7 @@
     "lint": "eslint --ext .js,.ts .",
     "pwd": "pwd",
     "test": "./testcommand.sh",
-    "test:js": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests"
+    "test:js": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests",
+    "update-badge": "./make_badge.sh anozon"
   }
 }
