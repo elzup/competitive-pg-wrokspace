@@ -1,7 +1,8 @@
 # elzup's Competitive Programming Workspace
 
+[![](atcoder-badge.svg)](https://atcoder.jp/users/anozon)
 ![](https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat)
-![](./atcoder-badge.png)
+
 
 ## Language
 
