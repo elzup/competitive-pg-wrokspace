@@ -21,10 +21,11 @@ COLORCODE=$(echo '{
 }' |jq --raw-output .$COLOR |sed 's/^.//')
 
 BADGE_URL="https://img.shields.io/badge/AtCoder-$RATE-$COLORCODE.svg"
+BADGE_FILENAME=atcoder-badge-$USERNAME.svg
 
 echo user: $USERNAME
 echo color: $COLOR
 echo rate: $RATE
 echo badge-url: $BADGE_URL
-wget $BADGE_URL -q -O atcoder-badge.svg
-echo successfly exported badge to ./atcoder-badge.svg
+wget $BADGE_URL -q -O $BADGE_FILENAME
+echo successfly exported badge to ./$BADGE_FILENAME
