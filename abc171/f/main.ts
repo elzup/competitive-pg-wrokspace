@@ -20,11 +20,15 @@
     const l = sl + K
 
     fset(l)
-    let res = ncr(l, sl)
+    let res = 0
+    let cache25 = 1
 
-    res = (res * 26) % mod
-    for (let i = 1; i < K; i++) {
-      res = (res * 25) % mod
+    // ###*****
+    for (let i = 0; i <= K; i++) {
+      let n1 = mul(ncr(l, i), cache25) % mod
+
+      res = (res + n1) % mod
+      cache25 = (cache25 * 25) % mod
     }
 
     return res
@@ -49,7 +53,7 @@
   const fac: number[] = []
   const finv: number[] = []
   const mod = 10 ** 9 + 7
-  const mul = (...a) =>
+  const mul = (...a): number =>
     a.reduce(
       (r, c) => ((((r >> 16) * c) % mod) * 65536 + (r & 65535) * c) % mod,
       1
