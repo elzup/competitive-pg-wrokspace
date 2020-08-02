@@ -6,7 +6,7 @@
 
   const main = (): Print => {
     const r = _io()
-    const [N] = r.nn()
+    const [_N] = r.nn()
     let a = r.nn()
 
     a.sort((x, y) => x - y)

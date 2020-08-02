@@ -3,7 +3,7 @@
     input: string
   ): void | string | number | string[] | number[] => {
     const r = _reader(input)
-    const [H, N] = r.nn()
+    const [H, _N] = r.nn()
     const A = r.nn()
 
     const sum = A.reduce((a, b) => b + a, 0)
@@ -21,7 +21,7 @@
     const ss = () => sp(s())
     const nn = () => mn(ss())
     const nls = () => mn(lines.slice(i))
-    const nnls = () => lines.slice(i).map(v => mn(sp(v)))
+    const nnls = () => lines.slice(i).map((v) => mn(sp(v)))
 
     return { lines, s, n, ss, nn, nls, nnls }
   }

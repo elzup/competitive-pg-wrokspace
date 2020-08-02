@@ -3,12 +3,12 @@
     input: string
   ): void | string | number | string[] | number[] => {
     const r = _reader(input)
-    const [N, M] = r.nn()
+    const [_N, M] = r.nn()
     const aa = r.nn()
 
     let lcm = 1
 
-    aa.forEach(a => {
+    aa.forEach((a) => {
       lcm = _lcm(lcm, a / 2)
     })
 
@@ -31,7 +31,7 @@
     const ss = () => sp(s())
     const nn = () => mn(ss())
     const nls = () => mn(lines.slice(i))
-    const nnls = () => lines.slice(i).map(v => mn(sp(v)))
+    const nnls = () => lines.slice(i).map((v) => mn(sp(v)))
 
     return { lines, s, n, ss, nn, nls, nnls }
   }

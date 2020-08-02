@@ -6,7 +6,7 @@
 
   const main = (): Print => {
     const r = _io()
-    const [A, B, M] = r.nn()
+    const [_A, _B, M] = r.nn()
 
     const ap = r.nn()
     const bp = r.nn()
@@ -37,7 +37,7 @@
     const ss = () => sp(s())
     const nn = () => mn(ss())
     const nls = () => mn(lines.slice(i))
-    const nnls = () => lines.slice(i).map(v => mn(sp(v)))
+    const nnls = () => lines.slice(i).map((v) => mn(sp(v)))
 
     return { lines, s, n, ss, nn, nls, nnls }
   }
@@ -46,7 +46,7 @@
 
   console.log(
     outs
-      .map(line => (typeof line === 'object' ? line.join(' ') : String(line)))
+      .map((line) => (typeof line === 'object' ? line.join(' ') : String(line)))
       .join('\n')
   )
 }

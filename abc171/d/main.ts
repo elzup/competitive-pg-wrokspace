@@ -6,9 +6,9 @@
 
   const main = (): Print => {
     const r = _io()
-    const [N] = r.nn()
+    const [_N] = r.nn()
     const A = r.nn()
-    const [Q] = r.nn()
+    const [_Q] = r.nn()
     const bc = r.nnls()
 
     const counts = {}
