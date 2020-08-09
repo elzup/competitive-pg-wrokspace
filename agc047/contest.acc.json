@@ -1,0 +1,55 @@
+{
+  "contest": {
+    "id": "agc047",
+    "title": "AtCoder Grand Contest 047",
+    "url": "https://atcoder.jp/contests/agc047"
+  },
+  "tasks": [
+    {
+      "id": "agc047_a",
+      "label": "A",
+      "title": "Integer Product",
+      "url": "https://atcoder.jp/contests/agc047/tasks/agc047_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "agc047_b",
+      "label": "B",
+      "title": "First Second",
+      "url": "https://atcoder.jp/contests/agc047/tasks/agc047_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "main.ts"
+      }
+    },
+    {
+      "id": "agc047_c",
+      "label": "C",
+      "title": "Product Modulo",
+      "url": "https://atcoder.jp/contests/agc047/tasks/agc047_c"
+    },
+    {
+      "id": "agc047_d",
+      "label": "D",
+      "title": "Twin Binary Trees",
+      "url": "https://atcoder.jp/contests/agc047/tasks/agc047_d"
+    },
+    {
+      "id": "agc047_e",
+      "label": "E",
+      "title": "Product Simulation",
+      "url": "https://atcoder.jp/contests/agc047/tasks/agc047_e"
+    },
+    {
+      "id": "agc047_f",
+      "label": "F",
+      "title": "Rooks",
+      "url": "https://atcoder.jp/contests/agc047/tasks/agc047_f"
+    }
+  ]
+}
