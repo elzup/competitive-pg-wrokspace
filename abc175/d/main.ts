@@ -6,7 +6,7 @@
 
   const main = (): Print => {
     const r = _io()
-    const [N, K] = r.nn()
+    const [_N, K] = r.nn()
     const P = r.nn()
     const C = r.nn()
 
