@@ -1,0 +1,24 @@
+{
+  "name": "competitive-pg-wrokspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "elzup <guild0105@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.5.3",
+    "atcoder-cli": "^2.0.4",
+    "eslint": "^6.8.0",
+    "eslint-config-nzap": "^1.4.6",
+    "ts-node": "^8.6.2",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "jimp": "^0.9.3",
+    "tstl": "^2.4.0"
+  },
+  "scripts": {
+    "new": "cargo atcoder new",
+    "submit": "cargo atcoder submit",
+    "test": "cargo atcoder test"
+  }
+}
