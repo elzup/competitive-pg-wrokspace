@@ -17,13 +17,13 @@
     "tstl": "^2.4.0"
   },
   "scripts": {
-    "new": "acc new --template ts",
-    "cwd": "cd $INIT_CWD",
-    "next": "(cd $INIT_CWD && yarn cwd && acc add --template ts)",
+    "new": "acc new --template $PROGRAM_LANG",
+    "new:ts": "acc new --template ts",
+    "next": "($INIT_CWD && acc add --template $PROGRAM_LANG)",
+    "next:ts": "($INIT_CWD && acc add --template ts)",
     "submit": "(cd $INIT_CWD && acc submit)",
     "submit:ts": "(cd $INIT_CWD && cp main.js && acc submit main.ts && rm main.ts)",
     "lint": "eslint --ext .js,.ts .",
-    "pwd": "pwd",
     "test": "./testcommand.sh",
     "test:js": "oj test -c \"node $INIT_CWD/main.js\" -d $INIT_CWD/tests",
     "update-badge": "./make_badge.sh anozon"
