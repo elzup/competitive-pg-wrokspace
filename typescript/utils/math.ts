@@ -42,7 +42,7 @@ const lcmDiv = (a: number[]) => {
     // => { b: 1 } 最大公約数
     // => { a: 1, b: 2, c: 2 } 最小公倍数
 
-    Object.keys(groups).forEach(k => {
+    Object.keys(groups).forEach((k) => {
       nums[k] = Math.max(groups[k], nums[k] || 0)
     })
   }
@@ -114,7 +114,7 @@ const mul = (...a) =>
     (r, c) => ((((r >> 16) * c) % mod) * 65536 + (r & 65535) * c) % mod,
     1
   )
-const inv = b => {
+const inv = (b) => {
   for (var a = mod, u = 0, v = 1, t; b; v = t)
     (t = (a / b) | 0),
       (a -= t * b),
