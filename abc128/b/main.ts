@@ -6,9 +6,19 @@ let outs: Print[] = []
 const main = (): Print => {
   const r = _io()
   const [N] = r.nn()
-  const [A, B] = r.nn()
+  const sps = r
+    .ss()
+    .map((v) => v.split(' '))
+    .map(([s, p], i) => [s, Number(p), i] as const)
 
-  return A + B + N
+  sps.sort(([as, ap], [bs, bp]) => {
+    const ds = as.localeCompare(bs)
+
+    if (ds === 0) ap - bp
+    return ds
+  })
+
+  console.log(sps.map(([, , i]) => String(i)).join('\n'))
 }
 
 const _io = (i = 0) => {
