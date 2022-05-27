@@ -5,20 +5,20 @@ let outs: Print[] = []
 
 const main = (): Print => {
   const r = _io()
-  const [N] = r.nn()
+  const [_N] = r.nn()
   const sps = r
-    .ss()
+    .ls()
     .map((v) => v.split(' '))
-    .map(([s, p], i) => [s, Number(p), i] as const)
+    .map(([s, p], i) => [s, Number(p), i + 1] as const)
 
   sps.sort(([as, ap], [bs, bp]) => {
     const ds = as.localeCompare(bs)
 
-    if (ds === 0) ap - bp
-    return ds
+    return ds === 0 ? bp - ap : ds
   })
+  // console.log(sps)
 
-  console.log(sps.map(([, , i]) => String(i)).join('\n'))
+  return sps.map(([, , i]) => String(i)).join('\n')
 }
 
 const _io = (i = 0) => {
@@ -33,9 +33,10 @@ const _io = (i = 0) => {
   const ss = () => sp(s())
   const nn = () => mn(ss())
   const nls = () => mn(lines.slice(i))
+  const ls = () => lines.slice(i)
   const nnls = () => lines.slice(i).map((v) => mn(sp(v)))
 
-  return { lines, s, n, ss, nn, nls, nnls }
+  return { lines, s, n, ss, nn, nls, nnls, ls }
 }
 
 outs.push(main())
