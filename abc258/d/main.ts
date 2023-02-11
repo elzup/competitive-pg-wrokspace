@@ -6,28 +6,43 @@ let outs: Print[] = []
 const main = (): Print => {
   const r = _io()
   const [N, X] = r.nn()
-  const abs = r.nnls()
+  const AB = r.nnls()
 
-  let res = Infinity
-  let t = 0
+  console.log(AB)
 
-  abs.forEach(([a, b], i) => {
-    t += a + b
-    const tt = t + (X - i - 1) * b
+  const ABS: number[] = []
 
-    res = Math.min(res, tt)
-  })
+  for (let i = 0; i < N; i++) {
+    ABS.push(AB[i][0] + AB[i][1])
+  }
 
-  return res
+  const sum = [ABS[0]]
+
+  for (let i = 1; i < N; i++) {
+    sum.push(sum[i - 1] + ABS[i])
+  }
+
+  let ans = Infinity
+
+  for (let i = 0; i < N; i++) {
+    const r = X - i - 1
+
+    if (r <= 0) continue
+    const t = sum[i] + AB[i][1] * r
+
+    ans = Math.min(ans, t)
+  }
+
+  return ans
 }
 
 const _io = (i = 0) => {
   const str: string = require('fs').readFileSync('/dev/stdin', 'utf8')
   const lines = str.trim().split('\n')
   const s = () => lines[i++] || ''
-  const n = () => Number(s())
+  const n = () => parseInt(s())
 
-  const mn = (v: string[]) => v.map(Number)
+  const mn = (v: string[]) => v.map(parseInt)
   const sp = (v: string) => v.split(' ')
 
   const ss = () => sp(s())
